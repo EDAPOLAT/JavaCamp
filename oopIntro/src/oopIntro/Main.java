@@ -6,7 +6,7 @@ public class Main {
 		
 		 System.out.println("Kurslar ve Kategoriler");
 		
-		 System.out.println("-------------------------------------------------------------------");
+		 System.out.println("--------------------------------------------------------------------");
 		
 		 Course  course1=new Course(1,"C#","Engin Demiroð","Yazýlým Geliþtirici Yetiþtirme Kampý(C#+Angular)");
 		 
@@ -24,7 +24,7 @@ public class Main {
 		 courseManager.addCourse(course2);
 		 courseManager.deleteCourse(course2);
 		 
-		 System.out.println("--------------------------------------------------------------");
+		 System.out.println("---------------------------------------------------------------");
 		 
 		 Category category1=new Category(1,"Programlama"); 
 		 
