@@ -11,6 +11,7 @@ public class Main {
 		student.setEmail("aabbc@gmail.com");
 		student.setStudentNumber(12345);
 		
+		
 	    StudentManager studentManager=new StudentManager();
 	    studentManager.add(student );
 	    

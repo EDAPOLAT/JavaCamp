@@ -5,7 +5,7 @@ public class Student extends User{
 	 private int studentNumber;
 	 
 	public Student() {
-		
+		 
 	}
 
 	public Student(int studentNumber ) {

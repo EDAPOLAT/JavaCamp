@@ -4,7 +4,7 @@ public class Instructor extends User {
  
 	String department;
 	
- public Instructor() {
+ public Instructor() { 
 	
  }
 	
