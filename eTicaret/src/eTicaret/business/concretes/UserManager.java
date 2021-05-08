@@ -1,10 +1,6 @@
-package eTicaret.business.concretes; 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern; 
-import eTicaret.business.abstracts.UserService;
-import eTicaret.business.abstracts.UserValidationService;
+package eTicaret.business.concretes;  
+import java.util.List; 
+import eTicaret.business.abstracts.UserService; 
 import eTicaret.dataAccess.abstracts.UserDao;
 import eTicaret.entities.concretes.User;
 

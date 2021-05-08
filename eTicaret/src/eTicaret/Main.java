@@ -13,9 +13,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		   
-		 User user=new User(2,"aaa","fatma","eee@gmail.com","1234567");
-		 User user2=new User(2,"aslý","gül","aaa@gmail.com","1234567");
-		 User user3=new User(1,"aslý","gül","aaaa@gmail.com","1234567");
+		 User user=new User(1,"Ayþe","Fatma","eee@gmail.com","1234567");
+		 User user2=new User(2,"Aslý","Gül","aaa@gmail.com","1234567");
+		  
 		  
 		 AuthManager authManager=new AuthManager(new UserManager(new InMemoryUserDao() ),new UserValidationManager(),new EmailManager()  );
 		 authManager.register(user);
@@ -24,15 +24,12 @@ public class Main {
 		 
 		 authManager.register(user2);
 		 
-		 System.out.println("----------------------------------------------------------------------------------------------");
-		 
-		 authManager.register(user3);
-		 
-		 System.out.println("----------------------------------------------------------------------------------------------");
+		 System.out.println("----------------------------------------------------------------------------------------------"); 
 		  
-		 authManager.login("kalem@gmail.com", "mjsjsj");
+		 authManager.login("eee@gmail.com", "1234567");
+		 
 		 System.out.println("----------------------------------------------------------------------------------------------");
-		 authManager.login("kalem@gmail.com", "");
+		 authManager.login("aaa@gmail.com", "");
 		 
 		 System.out.println("----------------------------------------------------------------------------------------------");
 		 

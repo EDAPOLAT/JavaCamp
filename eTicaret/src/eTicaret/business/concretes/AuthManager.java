@@ -37,7 +37,7 @@ public class AuthManager  implements AuthService{
        {
     	 System.out.println("Ýþlem baþarýlý.Üyelik doðrulama linki mailinize gönderildi.");
     	  emailService.mailSend( user.getEmail()); 
-    	  emailService.isVerified(1);
+    	  emailService.isVerified(user.getFirstName()+" "+user.getLastName());
     	  userService.add(user);
     	
     	 return ;
