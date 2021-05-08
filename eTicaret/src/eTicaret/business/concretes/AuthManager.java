@@ -1,4 +1,6 @@
 package eTicaret.business.concretes; 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 
 import eTicaret.core.abstracts.EmailService;
@@ -24,6 +26,7 @@ public class AuthManager  implements AuthService{
 	this.userValidationService=userValidationService;
 	this.emailService=emailService;
 	 
+
 	
 	 
 }
@@ -33,7 +36,8 @@ public class AuthManager  implements AuthService{
      if (result)
        {
     	 System.out.println("Ýþlem baþarýlý.Üyelik doðrulama linki mailinize gönderildi.");
-    	  emailService.mailSend( user.getEmail());
+    	  emailService.mailSend( user.getEmail()); 
+    	  emailService.isVerified(1);
     	  userService.add(user);
     	
     	 return ;
@@ -66,6 +70,9 @@ public class AuthManager  implements AuthService{
 		return true;
   }
 
+ 
+	
+   
   
 	public boolean checkFormatEmail(String email) {
 		var result= VALID_EMAIL_ADDRESS_REGEX.matcher(email).find();

@@ -11,5 +11,5 @@ public interface UserDao {
 	User get(int id);
 	List<User> getAll();
 	User getByEmail(String email);
-	User getLogin(String email, String password);
+	 
 }

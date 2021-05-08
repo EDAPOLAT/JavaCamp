@@ -28,35 +28,34 @@ public class UserManager implements UserService{
 	@Override
 	public void delete(User user) {
 		 
-		
+		userDao.delete(user);
 	}
 
 	@Override
 	public void update(User user) {
-		// TODO Auto-generated method stub
+		userDao.update(user);
 		
 	}
 
 	@Override
 	public User get(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		 
+		return userDao.get(id);
 	}
 
 	@Override
 	public List<User> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		 
+		return  userDao.getAll();
 	}
 	@Override
 	public User getByEmail(String email) {
 		return userDao.getByEmail(email);
 		 
 	}
-	@Override
-	public User getLogin(String email, String password) {
-		return userDao.getLogin(email, password);
-	}
+	 
+	 
+	 
 
 	 
 	    

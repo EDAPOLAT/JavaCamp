@@ -13,8 +13,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		   
-		 User user=new User(1,"aaa","fatma","eee@gmail.com","1234567");
-		 User user2=new User(1,"aslý","gül","aaa@gmail.com","1234567");
+		 User user=new User(2,"aaa","fatma","eee@gmail.com","1234567");
+		 User user2=new User(2,"aslý","gül","aaa@gmail.com","1234567");
 		 User user3=new User(1,"aslý","gül","aaaa@gmail.com","1234567");
 		  
 		 AuthManager authManager=new AuthManager(new UserManager(new InMemoryUserDao() ),new UserValidationManager(),new EmailManager()  );
